@@ -1,8 +1,4 @@
 import smtplib
-'''
-smtp is a server protocol
-this lib contains the required stuff for it
-'''
 
 def sendmailcode(server,port,username,password,to,message):
     myconnection = smtplib.SMTP(server,port)
@@ -17,5 +13,13 @@ def sendmailcode(server,port,username,password,to,message):
     terminates the connection and logs out from the mail
     '''
 
-sendmailcode('smtp.gmail.com',587,'pythonap2v@gmail.com','ap2vap2v','jayanttaneja1@gmail.com','Hi There !! \n this message has been sent by a python program')
+sender_email=input("Enter your email id       : ")
+
+password=input("Enter password            : ")
+
+reciever_email=input("Enter email id of reciever: ")
+
+
+sendmailcode('smtp.gmail.com',587,sender_email,password,reciever_email,message)
+
 

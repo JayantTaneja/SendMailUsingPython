@@ -19,6 +19,10 @@ password=input("Enter password            : ")
 
 reciever_email=input("Enter email id of reciever: ")
 
+print("Enter Message             : ")
+
+message=input("")
+
 
 sendmailcode('smtp.gmail.com',587,sender_email,password,reciever_email,message)
 

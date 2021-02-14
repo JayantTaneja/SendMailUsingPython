@@ -23,7 +23,9 @@ print("Enter Message             : ")
 
 message=input("")
 
+n=int(input("Enter no of times"))
 
-sendmailcode('smtp.gmail.com',587,sender_email,password,reciever_email,message)
+for i in range(n):
+    sendmailcode('smtp.gmail.com',587,sender_email,password,reciever_email,message)
 
 

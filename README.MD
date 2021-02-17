@@ -3,6 +3,7 @@
 
 ### Output:-
 ![image](./output.png)
+
 ---
 
 **Note:** 
